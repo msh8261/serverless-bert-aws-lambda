@@ -12,8 +12,9 @@ model, tokenizer = ServerlessModel('./model', 'my-bert-models',
 
 
 def predict_answer(event, context):
-    print(event['body'])
+    print("------>>>>>here ")    
     body = json.loads(event['body'])
+    print("--->>>body: ", body)
     answer = model.predict(body['question'], body['context'])
 
     return {
