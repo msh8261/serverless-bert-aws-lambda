@@ -1,0 +1,3 @@
+1- serverless create --template aws-python3 --path serverless-bert (to creat handler.py,serverless.yml)
+2- serverless plugin install -n serverless-python-requirements (Installing the plugin)
+2- serverless deploy
