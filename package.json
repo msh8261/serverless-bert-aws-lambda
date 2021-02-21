@@ -1,5 +1,5 @@
 {
-  "name": "serverless-bert-with-huggingface-aws-lambda",
+  "name": "serverless-bert-aws-lambda",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
