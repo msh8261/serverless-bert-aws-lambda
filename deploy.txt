@@ -13,4 +13,6 @@
 4- docker push 095518905647.dkr.ecr.us-east-2.amazonaws.com/bert-lambda
 
 
-5- serverless deploy
+5- serverless plugin install -n serverless-python-requirements
+
+6- serverless deploy

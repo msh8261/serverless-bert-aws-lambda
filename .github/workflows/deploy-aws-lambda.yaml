@@ -1,4 +1,4 @@
-name: deploy-aws-lambda
+name: deploy-aws-lambda-docker
 on:
   push:
     branches:

@@ -13,3 +13,6 @@ functions:
       - http:
           path: qa # http path
           method: post # http method
+
+plugins:
+  - serverless-python-requirements
