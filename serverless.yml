@@ -1,0 +1,15 @@
+service: serverless-bert-lambda-docker
+
+provider:
+  name: aws # provider
+  region: us-east-2 # aws region
+  memorySize: 5120 # optional, in MB, default is 1024
+  timeout: 60 # optional, in seconds, default is 6
+
+functions:
+  questionanswering:
+    image: 095518905647.dkr.ecr.us-east-2.amazonaws.com/bert-lambda@sha256:d453f12b7e8061b54cb2b968fa51dab3375f39fab03e802bcfaafd44f9de8731 #ecr url
+    events:
+      - http:
+          path: qa # http path
+          method: post # http method

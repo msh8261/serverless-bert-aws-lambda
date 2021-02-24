@@ -9,7 +9,7 @@ event = {
 }
 
 
-url = "https://2fy58abkyk.execute-api.us-east-2.amazonaws.com/dev/ask"
+url = "https://58uqnbkot8.execute-api.us-east-2.amazonaws.com/dev/qa"
 
 r = requests.post(url, json=event)
 print("result without securely key: ", r.json())

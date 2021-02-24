@@ -7,8 +7,7 @@ import json
 
 
 
-model, tokenizer = ServerlessModel('./model', 'my-bert-models',
-                        'qa/squad-distilbert.tar.gz')
+model = ServerlessModel('./model', 'my-bert-models','qa/squad-distilbert.tar.gz')
 
 
 def predict_answer(event, context):
