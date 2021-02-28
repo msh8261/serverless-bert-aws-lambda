@@ -1,5 +1,5 @@
 import pytest
-from handler import predict_answer
+from handler import handler
 import json
 
 
@@ -9,5 +9,5 @@ test_events = {
 
 
 def test_handler():
-    res = predict_answer(test_events, '')
+    res = handler(test_events, '')
     assert json.loads(res['body']) == {'answer': 'the us'}
